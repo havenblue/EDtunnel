@@ -856,7 +856,7 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 			const วเลสหลักHttps = atob(pt) + '://' + ไอดีผู้ใช้ + atob(at) + ชื่อโฮสต์ + ':' + พอร์ต + ส่วนUrlทั่วไปHttps + ส่วนUrl;
 			return พร็อกซีไอพีs.flatMap((พร็อกซีไอพี) => {
 				const วเลสรองHttps = atob(pt) + '://' + ไอดีผู้ใช้ + atob(at) + พร็อกซีไอพี + ':' + พอร์ต + ส่วนUrlทั่วไปHttps + ส่วนUrl + '-' + พร็อกซีไอพี + '-' + atob(ed);
-				return [วเลสหลักHttps, วเลสรองHttps];
+				return [วเลสหลักHttps];
 			});
 		});
 
